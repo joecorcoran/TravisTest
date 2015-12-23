@@ -39,4 +39,4 @@ class EventCell: UITableViewCell {
     self.task = nil
   }
   
-} s
+}
