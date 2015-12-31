@@ -1,10 +1,9 @@
-language: objective-c
-osx_image: xcode7.2
-xcode_project: TravisTest.xcodeproj
-xcode_scheme: TravisTest
-xcode_sdk: iphonesimulator9.2
-
- before_script:
+ language: objective-c
+ osx_image: xcode7.2
+ xcode_project: TravisTest.xcodeproj
+ xcode_scheme: TravisTest
+ xcode_sdk: iphonesimulator9.2
+before_script:
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
@@ -26,9 +25,9 @@ env:
  #HAID
  - secure:  "ahUxjWcDvK5zH6/44Q2+lfS3+POs2XDpSabrerMZmUVpk375i6MYoGJLoNzVGiyZJGsQLAVMfAE4hvHNpUTCXx23X8vRVWOs4M6nnUCDkRl9H5AYcd17vuVAXnzOws5Qxbq9MRX+tncPUOldlwC46CKJE2wIypaIuoCe9gZZCuMSmhxjrx1wViRuPY+mC4ociWHQNpOi9KTsMbz90z5pbM6+bbpIKnw8HpZ3fEPhDWPOdgZjgvMQh9zOcvCLpoKmD1/Fv8vjbeG3OXwserLe3itVj3XYt6p4217rpYib+W29sNLSUrpEGWP9on/gFxD74ORktliK6vxqNLbJx0TfTNxmjwnMMU8L1OmmrC40w55cJh4qNiSxvz5OObXVhpS4Btdoug6RlGSwf7dGerWD8r7nO+1kq+5v5pWEYhPouiKiVh/fw9wxI6bZqYIK72ElhNEj5+zHHxkOKxXBzJHXK2eWtEXFvl15Nh1sQGFd2rl3BHgGzYMyqiZmzZwmAXhHnV1+67eQ6jQN3i8HIO12fyH2ozsRDaJVjcv/J2N5cg67fdBXo7O52Lydomaj20DqnoiesuwDJnqtK3tDNSU5YQEu+xl58NmY9WuC+ofr1oNFfcWmyw5zvBSUcZlLR7uZoTrVow0R4IbmnglhNGS7PwI2zI03fHGPtjLDwbX1CDo="
 #HAPID
- -secure:  "T+NrgKB9J5R80ZHH0yTZqG26Q+0eUKj201hcqn31yG+rVKbBMgYatIPT+sh62fTuLg0VphWIg9VyAaVBP5FaZkQPs09rzFV6VsSXA8pGAEazuYFaCXE8aE3UwB1zZzu+87ustT8qQ4Pw+T7KJc//02lzaN/TS9y9f/0MlAK+xsXyZKrEkUiM1kYmHlrvmV3l6uGuh+RrfILlkCDTF9YHd1oq2Qin761Eqp1YQ197huTvpGT9C03tkkg7nL75LRl2wiocnuCt3CkU+WkDmpwhiZijL6tsl930Ns1fI4alQeeIj2yBG07RCgkPLSVD4dgeVWilnArLbES7ySymAPFDpDwtrxp9rSzyQmbAWZiIl/K0G12dVwrLUV78YQPMpj+vl/M1Ed/5c5y2mNXhnLJpbdVEOAS9/zRs5b8A7VpJYwpaWC8B37OkC0NNmTBhprfsAi3M59HrQqf0n9uG2Subylv2+hRbErjTHinBsfDVfQvzDr7b0q+zNQDmvHx8sSVn2XRJorqTJVUYIV7+A1IRYec8wTcQWQ5o3stA3MO2e3aAaIJp/U/HLy6LgYq5ar5Lid3riYoOqG2PpH0XM7sFKqte2OnQo8n6iZr8mY6yKepcwgMk1RRnO0hV+SOd5lEQQcWD9KaghwaFR/XzNakewzgQ4FQs2nKKXrvwskCdT8A="
+ - secure:  "T+NrgKB9J5R80ZHH0yTZqG26Q+0eUKj201hcqn31yG+rVKbBMgYatIPT+sh62fTuLg0VphWIg9VyAaVBP5FaZkQPs09rzFV6VsSXA8pGAEazuYFaCXE8aE3UwB1zZzu+87ustT8qQ4Pw+T7KJc//02lzaN/TS9y9f/0MlAK+xsXyZKrEkUiM1kYmHlrvmV3l6uGuh+RrfILlkCDTF9YHd1oq2Qin761Eqp1YQ197huTvpGT9C03tkkg7nL75LRl2wiocnuCt3CkU+WkDmpwhiZijL6tsl930Ns1fI4alQeeIj2yBG07RCgkPLSVD4dgeVWilnArLbES7ySymAPFDpDwtrxp9rSzyQmbAWZiIl/K0G12dVwrLUV78YQPMpj+vl/M1Ed/5c5y2mNXhnLJpbdVEOAS9/zRs5b8A7VpJYwpaWC8B37OkC0NNmTBhprfsAi3M59HrQqf0n9uG2Subylv2+hRbErjTHinBsfDVfQvzDr7b0q+zNQDmvHx8sSVn2XRJorqTJVUYIV7+A1IRYec8wTcQWQ5o3stA3MO2e3aAaIJp/U/HLy6LgYq5ar5Lid3riYoOqG2PpH0XM7sFKqte2OnQo8n6iZr8mY6yKepcwgMk1RRnO0hV+SOd5lEQQcWD9KaghwaFR/XzNakewzgQ4FQs2nKKXrvwskCdT8A="
  - APP_NAME="TravisTest"
  - 'DEVELOPER_NAME="iPhone Distribution: Michael Updegraff (R296M65L64)"'
- - INFO_PLIST = "TravisTest/Info.plist"
+ - INFO_PLIST= "TravisTest/Info.plist"
  - BUNDLE_DISPLAY_NAME="io.upworks.TravisTest"
  - PROFILE_NAME="TravisTest_Ad_Hoc"
