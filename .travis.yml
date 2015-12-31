@@ -2,6 +2,7 @@
  osx_image: xcode7.2
  xcode_project: TravisTest.xcodeproj
  xcode_scheme: TravisTest
+ xcode_sdk: iphonesimulator9.2
 before_script:
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
