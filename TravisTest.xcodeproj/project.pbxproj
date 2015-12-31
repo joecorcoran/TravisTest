@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E410D9F1C2B021600E0E0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E410D9E1C2B021600E0E0D4 /* AppDelegate.swift */; };
-		7E410DA41C2B021600E0E0D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E410DA21C2B021600E0E0D4 /* Main.storyboard */; };
 		7E410DA61C2B021600E0E0D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E410DA51C2B021600E0E0D4 /* Assets.xcassets */; };
 		7E410DA91C2B021600E0E0D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E410DA71C2B021600E0E0D4 /* LaunchScreen.storyboard */; };
 		7E410DB41C2B021600E0E0D4 /* TravisTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E410DB31C2B021600E0E0D4 /* TravisTestTests.swift */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		7E410D9B1C2B021600E0E0D4 /* TravisTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E410D9E1C2B021600E0E0D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E410DA31C2B021600E0E0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E410DA51C2B021600E0E0D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E410DA81C2B021600E0E0D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E410DAA1C2B021600E0E0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				7E410D9E1C2B021600E0E0D4 /* AppDelegate.swift */,
-				7E410DA21C2B021600E0E0D4 /* Main.storyboard */,
 				7E410DA51C2B021600E0E0D4 /* Assets.xcassets */,
 				7E410DA71C2B021600E0E0D4 /* LaunchScreen.storyboard */,
 				7E410DAA1C2B021600E0E0D4 /* Info.plist */,
@@ -204,7 +201,6 @@
 				7E5475F01C2B07B800DDBFFC /* EventDetailViewController.xib in Resources */,
 				7E410DA61C2B021600E0E0D4 /* Assets.xcassets in Resources */,
 				7E410DC51C2B05F800E0E0D4 /* EventCell.xib in Resources */,
-				7E410DA41C2B021600E0E0D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +246,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7E410DA21C2B021600E0E0D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E410DA31C2B021600E0E0D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7E410DA71C2B021600E0E0D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,7 +318,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Updegraff (R296M65L64)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Updegraff (R296M65L64)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -367,10 +356,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Updegraff (R296M65L64)";
 				INFOPLIST_FILE = TravisTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = io.upworks.TravisTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
