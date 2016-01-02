@@ -3,27 +3,27 @@ osx_image: xcode7.2
 xcode_project: TravisTest.xcodeproj
 xcode_scheme: TravisTest
 xcode_sdk: iphonesimulator9.2
-cache: bundler
-env:
- global:
-  - secure:  "T2sOJicybh2+sGmtXKwSFJrciXFTz1d1DBK5zBrW/rpJzAyix3TA6kA1ZCt5K5pOwW4VDNY4BaxhLzVlTVrDEfBaid8hpnMuUCCO1I5PoHvD8sI1YtPxcYrj+Q5bI/QVMClMoNJ/pqCm0/J39bookqyOolBoi+/5KGrFRAlztt6UGSGM3f+mnXa9TqzVc4kD4jHAJqdilhHKkrfsT9TwzIYnWefszyNFC7OIVC3KlImdjnQcE1YT1CdwDSF/6K3+3Cz1VwfJXG76a1vWMKfxQYzwhD/MUJ9fnNw9ahBpqguSDCKnxgExBDxGQk3KzWBbhVGHn9qikAgJzi1LF1k2BNL0qTxaMnvHtterqusNnH6A4YFSvJXNFpN69DU3NPIqLQOMmPupAw51HNQGelf0rc2h1oXOcrzkodKUEkbOFtb+KaV/vs6aoTn8s6HHqDCfV8t2tCaEYzGWdYHAPYKhSm76aSI4xFCT1DCjdZLjT8UL1s4QPxn/XVvh5mv476iQpF2VNpUAkal6MZQxl4vJrUm7aVXEhljDiLbBOVU+ki2xCr8XsDSLAYRSsJ3Sh4m1VqovEx7X8/aHueqIr+xfQgKaRRizsN1n/qosije+0+4V0N0jGzPwbBkLQj/zswQqg11PWwX6tlAJA9pRVG8G0h7nKW+wkaLurX+qRJ5fL0A="
-  - secure:  "JT0Hj7BTx0Qq118SvvwzxAgMVZyVJz7zDdnFbAQQNi7VTy4CCqL7W6yPTZtwujU/VgBR9dH7vHYt2e4y/9QsNjMcaxkrubCD/UOPWYc0bNlbfgIBSvvkF2ya8D1cnpmgTiLaflUVKtVfZvGNKGJBw7VgyjiKGqL0oomVApObHtuhX0vD1JyAQ1ci8DfggkNpD1a62LVdWm2UjcRYdU9f5v5MV9J8LB2/VoYlFVq/u6ThPcxRD5ATvj2M/C+wqGRzq+6g06mMoNXg0Un9teBGCfI3VTLrlm7oWq2o9Ok+JNByB7HNveIoGH5xSDs3kc/LmZW+dm+FqoMo1MFizY5E1SpwkB6QE/mY+817tWtLR+ekhFecdTNDM0sbvl9cLepdbebKvdhgvPuEbnYtTgAhAzyNjAoMD/KaSrjmratqJD5DFgEVU3aiMXfQZYfJ811QnBawo7fEiPdKn5DM+xvXO2XyxaCzF9KBt5pMipA+OeiFaWabwskWQqAE2ji/5BT/Va6SMSvw1HeL13UgkWpma7pvV9euU6sdLIH9ksFbsydDbscA/F/i3raHlYW49f016xsz26i8Y+VSI+RuaSnBTaGi8fZxc+Fu1X5hwln79/oDaHF1FiPdcW0oxQJ3WvykvsUkX7r6qtsu/RthSzVdyWOBELYssYchFbEpgCO+MHQ="
-  - secure:  "ahUxjWcDvK5zH6/44Q2+lfS3+POs2XDpSabrerMZmUVpk375i6MYoGJLoNzVGiyZJGsQLAVMfAE4hvHNpUTCXx23X8vRVWOs4M6nnUCDkRl9H5AYcd17vuVAXnzOws5Qxbq9MRX+tncPUOldlwC46CKJE2wIypaIuoCe9gZZCuMSmhxjrx1wViRuPY+mC4ociWHQNpOi9KTsMbz90z5pbM6+bbpIKnw8HpZ3fEPhDWPOdgZjgvMQh9zOcvCLpoKmD1/Fv8vjbeG3OXwserLe3itVj3XYt6p4217rpYib+W29sNLSUrpEGWP9on/gFxD74ORktliK6vxqNLbJx0TfTNxmjwnMMU8L1OmmrC40w55cJh4qNiSxvz5OObXVhpS4Btdoug6RlGSwf7dGerWD8r7nO+1kq+5v5pWEYhPouiKiVh/fw9wxI6bZqYIK72ElhNEj5+zHHxkOKxXBzJHXK2eWtEXFvl15Nh1sQGFd2rl3BHgGzYMyqiZmzZwmAXhHnV1+67eQ6jQN3i8HIO12fyH2ozsRDaJVjcv/J2N5cg67fdBXo7O52Lydomaj20DqnoiesuwDJnqtK3tDNSU5YQEu+xl58NmY9WuC+ofr1oNFfcWmyw5zvBSUcZlLR7uZoTrVow0R4IbmnglhNGS7PwI2zI03fHGPtjLDwbX1CDo="
-  - secure:  "T+NrgKB9J5R80ZHH0yTZqG26Q+0eUKj201hcqn31yG+rVKbBMgYatIPT+sh62fTuLg0VphWIg9VyAaVBP5FaZkQPs09rzFV6VsSXA8pGAEazuYFaCXE8aE3UwB1zZzu+87ustT8qQ4Pw+T7KJc//02lzaN/TS9y9f/0MlAK+xsXyZKrEkUiM1kYmHlrvmV3l6uGuh+RrfILlkCDTF9YHd1oq2Qin761Eqp1YQ197huTvpGT9C03tkkg7nL75LRl2wiocnuCt3CkU+WkDmpwhiZijL6tsl930Ns1fI4alQeeIj2yBG07RCgkPLSVD4dgeVWilnArLbES7ySymAPFDpDwtrxp9rSzyQmbAWZiIl/K0G12dVwrLUV78YQPMpj+vl/M1Ed/5c5y2mNXhnLJpbdVEOAS9/zRs5b8A7VpJYwpaWC8B37OkC0NNmTBhprfsAi3M59HrQqf0n9uG2Subylv2+hRbErjTHinBsfDVfQvzDr7b0q+zNQDmvHx8sSVn2XRJorqTJVUYIV7+A1IRYec8wTcQWQ5o3stA3MO2e3aAaIJp/U/HLy6LgYq5ar5Lid3riYoOqG2PpH0XM7sFKqte2OnQo8n6iZr8mY6yKepcwgMk1RRnO0hV+SOd5lEQQcWD9KaghwaFR/XzNakewzgQ4FQs2nKKXrvwskCdT8A="
-  - APP_NAME="TravisTest"
-  - 'DEVELOPER_NAME="iPhone Distribution: Michael Updegraff (R296M65L64)"'
-  - INFO_PLIST= "TravisTest/Info.plist"
-  - BUNDLE_DISPLAY_NAME="io.upworks.TravisTest"
-  - PROFILE_NAME="TravisTest_Ad_Hoc"
-before_script:
- - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
- - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
- - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
- - ./scripts/add-key.sh
- - ./scripts/update-bundle.sh
-script:
- - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
-after_script:
- - ./scripts/remove-key.sh
-after_succes:
- - ./scripts/sign-and-upload.sh
+# cache: bundler
+# env:
+#  global:
+#   - secure:  "T2sOJicybh2+sGmtXKwSFJrciXFTz1d1DBK5zBrW/rpJzAyix3TA6kA1ZCt5K5pOwW4VDNY4BaxhLzVlTVrDEfBaid8hpnMuUCCO1I5PoHvD8sI1YtPxcYrj+Q5bI/QVMClMoNJ/pqCm0/J39bookqyOolBoi+/5KGrFRAlztt6UGSGM3f+mnXa9TqzVc4kD4jHAJqdilhHKkrfsT9TwzIYnWefszyNFC7OIVC3KlImdjnQcE1YT1CdwDSF/6K3+3Cz1VwfJXG76a1vWMKfxQYzwhD/MUJ9fnNw9ahBpqguSDCKnxgExBDxGQk3KzWBbhVGHn9qikAgJzi1LF1k2BNL0qTxaMnvHtterqusNnH6A4YFSvJXNFpN69DU3NPIqLQOMmPupAw51HNQGelf0rc2h1oXOcrzkodKUEkbOFtb+KaV/vs6aoTn8s6HHqDCfV8t2tCaEYzGWdYHAPYKhSm76aSI4xFCT1DCjdZLjT8UL1s4QPxn/XVvh5mv476iQpF2VNpUAkal6MZQxl4vJrUm7aVXEhljDiLbBOVU+ki2xCr8XsDSLAYRSsJ3Sh4m1VqovEx7X8/aHueqIr+xfQgKaRRizsN1n/qosije+0+4V0N0jGzPwbBkLQj/zswQqg11PWwX6tlAJA9pRVG8G0h7nKW+wkaLurX+qRJ5fL0A="
+#   - secure:  "JT0Hj7BTx0Qq118SvvwzxAgMVZyVJz7zDdnFbAQQNi7VTy4CCqL7W6yPTZtwujU/VgBR9dH7vHYt2e4y/9QsNjMcaxkrubCD/UOPWYc0bNlbfgIBSvvkF2ya8D1cnpmgTiLaflUVKtVfZvGNKGJBw7VgyjiKGqL0oomVApObHtuhX0vD1JyAQ1ci8DfggkNpD1a62LVdWm2UjcRYdU9f5v5MV9J8LB2/VoYlFVq/u6ThPcxRD5ATvj2M/C+wqGRzq+6g06mMoNXg0Un9teBGCfI3VTLrlm7oWq2o9Ok+JNByB7HNveIoGH5xSDs3kc/LmZW+dm+FqoMo1MFizY5E1SpwkB6QE/mY+817tWtLR+ekhFecdTNDM0sbvl9cLepdbebKvdhgvPuEbnYtTgAhAzyNjAoMD/KaSrjmratqJD5DFgEVU3aiMXfQZYfJ811QnBawo7fEiPdKn5DM+xvXO2XyxaCzF9KBt5pMipA+OeiFaWabwskWQqAE2ji/5BT/Va6SMSvw1HeL13UgkWpma7pvV9euU6sdLIH9ksFbsydDbscA/F/i3raHlYW49f016xsz26i8Y+VSI+RuaSnBTaGi8fZxc+Fu1X5hwln79/oDaHF1FiPdcW0oxQJ3WvykvsUkX7r6qtsu/RthSzVdyWOBELYssYchFbEpgCO+MHQ="
+#   - secure:  "ahUxjWcDvK5zH6/44Q2+lfS3+POs2XDpSabrerMZmUVpk375i6MYoGJLoNzVGiyZJGsQLAVMfAE4hvHNpUTCXx23X8vRVWOs4M6nnUCDkRl9H5AYcd17vuVAXnzOws5Qxbq9MRX+tncPUOldlwC46CKJE2wIypaIuoCe9gZZCuMSmhxjrx1wViRuPY+mC4ociWHQNpOi9KTsMbz90z5pbM6+bbpIKnw8HpZ3fEPhDWPOdgZjgvMQh9zOcvCLpoKmD1/Fv8vjbeG3OXwserLe3itVj3XYt6p4217rpYib+W29sNLSUrpEGWP9on/gFxD74ORktliK6vxqNLbJx0TfTNxmjwnMMU8L1OmmrC40w55cJh4qNiSxvz5OObXVhpS4Btdoug6RlGSwf7dGerWD8r7nO+1kq+5v5pWEYhPouiKiVh/fw9wxI6bZqYIK72ElhNEj5+zHHxkOKxXBzJHXK2eWtEXFvl15Nh1sQGFd2rl3BHgGzYMyqiZmzZwmAXhHnV1+67eQ6jQN3i8HIO12fyH2ozsRDaJVjcv/J2N5cg67fdBXo7O52Lydomaj20DqnoiesuwDJnqtK3tDNSU5YQEu+xl58NmY9WuC+ofr1oNFfcWmyw5zvBSUcZlLR7uZoTrVow0R4IbmnglhNGS7PwI2zI03fHGPtjLDwbX1CDo="
+#   - secure:  "T+NrgKB9J5R80ZHH0yTZqG26Q+0eUKj201hcqn31yG+rVKbBMgYatIPT+sh62fTuLg0VphWIg9VyAaVBP5FaZkQPs09rzFV6VsSXA8pGAEazuYFaCXE8aE3UwB1zZzu+87ustT8qQ4Pw+T7KJc//02lzaN/TS9y9f/0MlAK+xsXyZKrEkUiM1kYmHlrvmV3l6uGuh+RrfILlkCDTF9YHd1oq2Qin761Eqp1YQ197huTvpGT9C03tkkg7nL75LRl2wiocnuCt3CkU+WkDmpwhiZijL6tsl930Ns1fI4alQeeIj2yBG07RCgkPLSVD4dgeVWilnArLbES7ySymAPFDpDwtrxp9rSzyQmbAWZiIl/K0G12dVwrLUV78YQPMpj+vl/M1Ed/5c5y2mNXhnLJpbdVEOAS9/zRs5b8A7VpJYwpaWC8B37OkC0NNmTBhprfsAi3M59HrQqf0n9uG2Subylv2+hRbErjTHinBsfDVfQvzDr7b0q+zNQDmvHx8sSVn2XRJorqTJVUYIV7+A1IRYec8wTcQWQ5o3stA3MO2e3aAaIJp/U/HLy6LgYq5ar5Lid3riYoOqG2PpH0XM7sFKqte2OnQo8n6iZr8mY6yKepcwgMk1RRnO0hV+SOd5lEQQcWD9KaghwaFR/XzNakewzgQ4FQs2nKKXrvwskCdT8A="
+#   - APP_NAME="TravisTest"
+#   - 'DEVELOPER_NAME="iPhone Distribution: Michael Updegraff (R296M65L64)"'
+#   - INFO_PLIST= "TravisTest/Info.plist"
+#   - BUNDLE_DISPLAY_NAME="io.upworks.TravisTest"
+#   - PROFILE_NAME="TravisTest_Ad_Hoc"
+# before_script:
+#  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
+#  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
+#  - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+#  - ./scripts/add-key.sh
+#  - ./scripts/update-bundle.sh
+# script:
+#  - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
+# after_script:
+#  - ./scripts/remove-key.sh
+# after_succes:
+#  - ./scripts/sign-and-upload.sh
