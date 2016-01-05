@@ -1,4 +1,4 @@
-language: objective-c
+ language: objective-c
 osx_image: xcode7.2
 xcode_project: TravisTest.xcodeproj
 xcode_scheme: TravisTest
