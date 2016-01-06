@@ -12,7 +12,7 @@ fi
 PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
 OUTPUTDIR="$PWD/build/Release-iphoneos"
 
-xcrun -log -sdk iphoneos9.2 PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
+xcrun -log -v -sdk iphoneos9.2 PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
 
 zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip  . -i $OUTPUTDIR/$APP_NAME.app.dSYM"
 
