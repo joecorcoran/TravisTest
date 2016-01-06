@@ -1,4 +1,8 @@
-#TravisTest.xcodeproj/project.xcworkspace/xcuserdata/mru.xcuserdatad/#UserInterfaceState.xcuserstate
-#TravisTest.xcodeproj/project.xcworkspace/xcuserdata/mru.xcuserdatad/#WorkspaceSettings.xcsettings
-#TravisTest.xcodeproj/project.pbxproj
+# Xcode
+DerivedData/
+build/
+*.xcodeproj/project.xcworkspace/xcuserdata/**/*
+*.xcodeproj/xcuserdata/**/*
+*.xcworkspace
 .DS_Store
+config.sh
