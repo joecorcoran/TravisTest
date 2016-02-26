@@ -15,7 +15,6 @@ env:
   - BUNDLE_DISPLAY_NAME="io.upworks.TravisTest"
   - PROFILE_NAME="TravisTest_Ad_Hoc"
 before_script:
-  - xcode-select -print-path
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
