@@ -6,3 +6,4 @@ build/
 *.xcworkspace
 .DS_Store
 config.sh
+.idea
