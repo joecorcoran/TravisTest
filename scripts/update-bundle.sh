@@ -1,3 +1,5 @@
+#!/bin/sh
+
 if [ ! -z "$INFO_PLIST" ]; then
   /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $TRAVIS_BUILD_NUMBER" "$INFO_PLIST"
 fi
