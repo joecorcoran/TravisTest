@@ -20,6 +20,7 @@ before_script:
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12 
   - ./scripts/add-key.sh
   - ./scripts/update-bundle.sh
+  - pwd
   - cp ./scripts/Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz /Applications/Xcode.app/Contents/Developer
   - cd /Applications/Xcode.app/Contents/Developer
   - tar zxvf Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz
