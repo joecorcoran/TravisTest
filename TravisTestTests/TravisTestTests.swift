@@ -30,6 +30,7 @@ class TravisTestTests: XCTestCase {
   }
   
   func testAsynchronousURLConnection() {
+    
     let URL = NSURL(string: "https://upworks.io/api/events/event_listing.events.json")!
     let expectation = expectationWithDescription("GET \(URL)")
     

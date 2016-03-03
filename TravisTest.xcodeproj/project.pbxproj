@@ -19,6 +19,8 @@
 		7E5475F01C2B07B800DDBFFC /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E5475EE1C2B07B800DDBFFC /* EventDetailViewController.xib */; };
 		7E5475F21C2B085800DDBFFC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5475F11C2B085800DDBFFC /* Event.swift */; };
 		7E5475F41C2B0A1500DDBFFC /* EventClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5475F31C2B0A1500DDBFFC /* EventClient.swift */; };
+		7EDA43DB1C87AE9700A6FCF2 /* GD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDA43DA1C87AE9700A6FCF2 /* GD.framework */; };
+		7EDA43DF1C87BE4600A6FCF2 /* GDAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA43DE1C87BE4600A6FCF2 /* GDAssets.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		7E5475EE1C2B07B800DDBFFC /* EventDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
 		7E5475F11C2B085800DDBFFC /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7E5475F31C2B0A1500DDBFFC /* EventClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventClient.swift; sourceTree = "<group>"; };
+		7EDA43DA1C87AE9700A6FCF2 /* GD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GD.framework; path = System/Library/Frameworks/GD.framework; sourceTree = SDKROOT; };
+		7EDA43DD1C87B90D00A6FCF2 /* default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = default.xcconfig; sourceTree = "<group>"; };
+		7EDA43DE1C87BE4600A6FCF2 /* GDAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GDAssets.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDA43DB1C87AE9700A6FCF2 /* GD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,7 @@
 				7E410D9D1C2B021600E0E0D4 /* TravisTest */,
 				7E410DB21C2B021600E0E0D4 /* TravisTestTests */,
 				7E410D9C1C2B021600E0E0D4 /* Products */,
+				7EDA43DC1C87AEA300A6FCF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,8 @@
 				7E5475EE1C2B07B800DDBFFC /* EventDetailViewController.xib */,
 				7E5475F11C2B085800DDBFFC /* Event.swift */,
 				7E5475F31C2B0A1500DDBFFC /* EventClient.swift */,
+				7EDA43DD1C87B90D00A6FCF2 /* default.xcconfig */,
+				7EDA43DE1C87BE4600A6FCF2 /* GDAssets.bundle */,
 			);
 			path = TravisTest;
 			sourceTree = "<group>";
@@ -112,6 +121,14 @@
 				7E410DB51C2B021600E0E0D4 /* Info.plist */,
 			);
 			path = TravisTestTests;
+			sourceTree = "<group>";
+		};
+		7EDA43DC1C87AEA300A6FCF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA43DA1C87AE9700A6FCF2 /* GD.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +218,7 @@
 				7E5475F01C2B07B800DDBFFC /* EventDetailViewController.xib in Resources */,
 				7E410DA61C2B021600E0E0D4 /* Assets.xcassets in Resources */,
 				7E410DC51C2B05F800E0E0D4 /* EventCell.xib in Resources */,
+				7EDA43DF1C87BE4600A6FCF2 /* GDAssets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +359,7 @@
 		};
 		7E410DB91C2B021600E0E0D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDA43DD1C87B90D00A6FCF2 /* default.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -348,6 +367,10 @@
 				INFOPLIST_FILE = TravisTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.upworks.TravisTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -356,6 +379,7 @@
 		};
 		7E410DBA1C2B021600E0E0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDA43DD1C87B90D00A6FCF2 /* default.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Updegraff (R296M65L64)";
@@ -364,6 +388,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.upworks.TravisTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

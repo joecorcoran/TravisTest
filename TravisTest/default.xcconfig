@@ -1,0 +1,10 @@
+//
+//  default.xcconfig
+//  TravisTest
+//
+//  Created by Michael Updegraff on 3/2/16.
+//  Copyright © 2016 Michael Updegraff. All rights reserved.
+//
+FIPS_PACKAGE=$(CURRENT_ARCH).sdk
+LDPLUSPLUS=/Applications/Xcode.app/Contents/Developer/Good.platform/FIPS_module/$FIPS_PACKAGE/bin/gd_fipsld
+LD=/Applications/Xcode.app/Contents/Developer/Good.platform/FIPS_module/$FIPS_PACKAGE/bin/gd_fipsld
