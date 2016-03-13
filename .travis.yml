@@ -14,15 +14,32 @@ env:
   - INFO_PLIST= "TravisTest/Info.plist"
   - BUNDLE_DISPLAY_NAME="io.upworks.TravisTest"
   - PROFILE_NAME="TravisTest_Ad_Hoc"
+  - GOOD_ZIP="Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz"
+  - FIPS_FILE="FIPS_module.tar"
+  - FIPS_DIR="FIP_Module"
 before_script:
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12 
   - ./scripts/add-key.sh
   - ./scripts/update-bundle.sh
-  - cp ./scripts/Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz /Applications/Xcode.app/Contents/Developer
+  - cp "./scripts/$GOOD_ZIP" /Applications/Xcode.app/Contents/Developer
   - cd /Applications/Xcode.app/Contents/Developer
-  - tar zxvf Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz
+  - for file in "$GOOD_ZIP"
+      do
+        tar -xvf "$file"
+      done
+  - cd ./Good.Platform
+  - mkdir "$FIPS_DIR"
+  - cp "$FIPS_FILE" ./"$FIPS_DIR"
+  - cd ./"$FIPS_DIR"
+  - for file2 in $FIPS_FILE
+      do
+        tar -xvf "$file2"
+      done
+  - rm "$FIPS_FILE"
+  - cd ../
+  - rm "$FIPS_FILE"
   - cd /Users/travis/build/UpWorks/TravisTest
 script:
   - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
