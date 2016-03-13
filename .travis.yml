@@ -24,7 +24,13 @@ before_script:
   - ./scripts/add-key.sh
   - ./scripts/update-bundle.sh
   - cp "./scripts/$GOOD_ZIP" /Applications/Xcode.app/Contents/Developer
-  - ./scripts/install-good-step-one.sh
+  - cd /Applications/Xcode.app/Contents/Developer
+  - tar zxvf Good_Dynamics_client_SDK_for_iOS_v2.1.4439.tar.gz
+  - cd ./Good.Platform
+  - mkdir "$FIPS_DIR"
+  - cp "$FIPS_FILE" ./"$FIPS_DIR"
+  - cd ./"$FIPS_DIR"
+  - tar zxvf "$FIPS_FILE"
   - cd /Users/travis/build/UpWorks/TravisTest
 script:
   - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
