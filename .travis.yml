@@ -32,7 +32,7 @@ before_script:
   - cd ./"$FIPS_DIR"
   - tar zxvf "$FIPS_FILE"
   - cd /Applications/Xcode.app/Contents/Developer/Good.Platform
-  - ./install.sh
+  - sudo ./install.sh
   - cd /Users/travis/build/UpWorks/TravisTest
 script:
   - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
