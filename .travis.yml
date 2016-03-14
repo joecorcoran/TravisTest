@@ -31,7 +31,7 @@ before_script:
   - cp "$FIPS_FILE" ./"$FIPS_DIR"
   - cd ./"$FIPS_DIR"
   - tar zxvf "$FIPS_FILE"
-  - cd /Applications/Xcode.app/Contents/Developer
+  - cd /Applications/Xcode.app/Contents/Developer/Good.Platform
   - ./install.sh
   - cd /Users/travis/build/UpWorks/TravisTest
 script:
