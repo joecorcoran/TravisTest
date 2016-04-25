@@ -19,8 +19,8 @@ zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip  . -i $OUTPUTDIR/$APP_NAME.app.dSYM
 RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`
 RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
 
-echo RELEASE_DATE;
-echo RELEASE_NOTES;
+echo $RELEASE_DATE;
+echo $RELEASE_NOTES;
 
  #if [ ! -z "$HOCKEY_APP_ID" ] && [ ! -z "$HOCKEY_APP_TOKEN" ]; then
 #   curl https://rink.hockeyapp.net/api/2/apps/$HOCKEY_APP_ID/app_versions \
