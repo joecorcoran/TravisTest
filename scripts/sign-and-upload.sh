@@ -10,7 +10,7 @@ fi
 # Thanks @johanneswuerbach https://gist.github.com/johanneswuerbach/5559514
 
 PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
-OUTPUTDIR="$PWD/build/Release-iphoneos"
+OUTPUTDIR="$PWD/Release-iphoneos"
 
 xcrun -log -v -sdk iphoneos9.2 PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
 
