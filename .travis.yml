@@ -35,7 +35,8 @@ before_script:
   - sudo ./install.sh
   - cd /Users/travis/build/UpWorks/TravisTest
 script:
-  - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
+  #- xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 build test
+  - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphoneos -configuration Release OBJROOT=$PWD/build test SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 after_script:
 - ./scripts/remove-key.sh
 after_success:

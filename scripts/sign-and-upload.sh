@@ -19,9 +19,6 @@ zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip  . -i $OUTPUTDIR/$APP_NAME.app.dSYM
 RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`
 RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
 
-locate TravisTest.app.dSYM.zip
-
-
 echo $RELEASE_DATE;
 echo $RELEASE_NOTES;
 
