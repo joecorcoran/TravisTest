@@ -378,7 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.upworks.TravisTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "bc356fa8-74d7-4bf7-aa96-099ecc05187e";
 			};
 			name = Debug;
 		};
@@ -394,13 +394,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "";
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-lz",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.upworks.TravisTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "bc356fa8-74d7-4bf7-aa96-099ecc05187e";
 			};
 			name = Release;
 		};
