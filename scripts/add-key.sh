@@ -7,11 +7,11 @@ security create-keychain -p travis $KEY_CHAIN
 security default-keychain -s $KEY_CHAIN
 
 # Unlock the keychain
-security unlock-keychain -p $KEY_CHAIN
+security unlock-keychain -p travis $KEY_CHAIN
 
 # Set keychain timeout to 1 hour for long builds
 # see http://www.egeek.me/2013/02/23/jenkins-and-xcode-user-interaction-is-not-allowed/
-security set-keychain-settings -t 3600 -l ~/Library/Keychains/$KEY_CHAIN
+security set-keychain-settings -t 3600 -l ~/Library/Keychains/ios-build.keychain
 
 # Add certificates to keychain and allow codesign to access them
 security import ./scripts/certs/apple.cer -k ~/Library/Keychains/$KEY_CHAIN -T /usr/bin/codesign
