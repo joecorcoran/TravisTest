@@ -39,5 +39,6 @@ script:
   - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphoneos9.2  -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 after_script:
   - ./scripts/sign-and-upload.sh
-after_success:
   - ./scripts/remove-key.sh
+after_success:
+  #- ./scripts/remove-key.sh
