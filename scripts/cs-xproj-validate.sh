@@ -2,7 +2,7 @@
 
 #Usage: $ ./cs-xproj-validate.sh path/to/xcode/project/file/theproject.xcodeproj
 
-PROJECT_FILE="TravisTest.xcodeproj"
+PROJECT_FILE="TravisTest.xcodeproj/project.pbxproj"
 
 PREVIOUS_LINE=-1
 
