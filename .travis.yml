@@ -19,7 +19,6 @@ env:
   - FIPS_FILE="FIPS_module.tar"
   - FIPS_DIR="FIP_Module"
 before_script:
-  - ./scripts/cs-xproj-validate.sh
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisTest_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisTest_Ad_Hoc.mobileprovision
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
   - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12 
@@ -36,6 +35,7 @@ before_script:
   - cd /Applications/Xcode.app/Contents/Developer/Good.Platform
   - sudo ./install.sh
   - cd /Users/travis/build/UpWorks/TravisTest
+  - ./scripts/cs-xproj-validate.sh
 script:
   - xctool test -project TravisTest.xcodeproj -scheme TravisTest -sdk iphonesimulator9.2 ONLY_ACTIVE_ARCH=NO
   - xctool -project TravisTest.xcodeproj -scheme TravisTest -sdk iphoneos9.2  -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
