@@ -11,7 +11,7 @@ do
   TEMP=`expr $PREVIOUS_LINE + 1`
   
   if [  $TEMP -eq $LINE ] ; then
-    echo " There is a Code Signing Identity (CODE_SIGN_IDENTITY) issue in $PROJECT_FILE at line $PREVIOUS_LINE."
+    echo "There is a Code Signing Identity (CODE_SIGN_IDENTITY) issue in $PROJECT_FILE at line $PREVIOUS_LINE."
     exit 1
   fi
   
