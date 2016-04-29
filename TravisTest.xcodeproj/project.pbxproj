@@ -390,7 +390,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Michael Updegraff (R296M65L64)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Michael Updegraff (R296M65L64)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TravisTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
